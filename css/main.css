@@ -86,7 +86,6 @@
 	}
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
-
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 1500px;
@@ -1556,7 +1555,7 @@
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color:#888;
 	}
 
 		body.is-loading * {
@@ -1600,10 +1599,12 @@
 
 		h2.alt {
 			color: #888;
+			/* color: #f00 */
 		}
 
 			h2.alt strong {
 				color: #666;
+				/* color: #f00 */
 			}
 
 	h3 {
@@ -1878,7 +1879,7 @@
 				text-align: left;
 				padding: 0.5em 1em 0.5em 1em;
 				color: #fff;
-				background: #222729 url("images/overlay.png");
+				background: #f2b9ed url("images/overlay.png");
 			}
 
 			table.default thead {
@@ -1987,7 +1988,8 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
+		background: #F078C8 url("images/overlay.png");
+		/* background: #222629 url("images/overlay.png"); */
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -2375,7 +2377,8 @@
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: #222729 url("images/overlay.png");
+				/* background: #222729 url("images/overlay.png"); */
+				background: #F078C8 url("images/overlay.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
 

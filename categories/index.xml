@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on GuoGuo</title>
-    <link>https://GHJmiao.github.io/categories/</link>
+    <link>https://ghjmiao.github.io/categories/</link>
     <description>Recent content in Categories on GuoGuo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Untitled.</copyright>
     
-	<atom:link href="https://GHJmiao.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ghjmiao.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -3,17 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://GHJmiao.github.io/categories/</loc>
+    <loc>https://ghjmiao.github.io/post/birthday/</loc>
+    <lastmod>2017-10-18T05:44:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ghjmiao.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://GHJmiao.github.io/</loc>
+    <loc>https://ghjmiao.github.io/</loc>
+    <lastmod>2017-10-18T05:44:05+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://GHJmiao.github.io/tags/</loc>
+    <loc>https://ghjmiao.github.io/post/</loc>
+    <lastmod>2017-10-18T05:44:05+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ghjmiao.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
