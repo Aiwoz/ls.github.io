@@ -1,0 +1,216 @@
+% !TEX program = xelatex
+% This is my resume
+% Chinese translation
+% by 7Ethan
+
+\documentclass{resume}
+\usepackage{graphicx}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\Large{
+  \begin{tabu}{ c l r }
+   \multirow{5}{1in}{\includegraphics[width=0.88in]{avatar}} & \scshape{张善干} & \pbar{Golang}{0.75} \\
+    & \email{sergeychang@gmail.com} & \pbar{Python}{0.48} \\
+    & \phone{(+86) 137 6112 6180} & \pbar{C/C++}{0.63} \\ 
+    & \linkedin[博客:www.7ethan.top]{https://www.7ethan.top} & \pbar{Back-end}{0.6} \\
+    & \github[github.com/7Ethan]{https://github.com/7Ethan} & \pbar{Front-end}{0.4}\\
+  \end{tabu}
+}
+
+\normalsize { %设置所有如下正文的大小
+\section{\faGraduationCap\ 教育经历}
+\datedsubsection{\textbf{上海电机学院},上海}{2012 -- 2016}
+\textit{学士}\ 电子信息工程
+\role{发表论文:}{识别手势挥动的游戏装置《数字技术应用》}
+
+\section{\faUsers\ 工作与项目}
+
+\datedsubsection{\textbf{上海致达智能科技股份有限公司~研发部~/~中级研发工程师}}{2016.5 -- 2018.11}
+\vspace{0.5ex}
+\datedsubsection{\textbf{智能充电桩后台管理系统}}{2018.6-2018-11}
+\role{技术栈：}{Python Tornado Redis（存放路由关系） MySQL Nginx Kafka Zookeeper Docker Drone+Rancher}
+\begin{itemize}
+  \item 实现
+  \item 完成 
+  \item 根据中国电力科学院相关标准在系统中加入 AES 硬件加密模块，提升系统的安全性。
+  \item 部分Linux驱动程序更新与维护。
+\end{itemize}
+
+
+\vspace{0.5ex}
+\datedsubsection{\textbf{国家电网 BAM 平台}}{2018.6-2018-11}
+\role{技术栈：}{Golang Micro框架 GoMock gRPC Protobuf etcd Redis Docker MySQL MongoDB CI Promethus grafna Elasticsearch Drone+Rancher}
+\begin{itemize}
+  \item 实现对流程运行状态、流程绩效、流程合规性等进行监控：
+  \item 完成 
+  \item 使用Graylog统一收集Docker日志
+  \item 部分Linux驱动程序更新与维护。
+  \item 1.	流程运行状态监控：
+  对整个业务处理过程以业务化的方式、全流程的视角进行流程运行状态的监控展示，而非只能看到部分流程片段执行的状态（因为全流程是断裂的、部分流程片段没有基于工作流实现、存在线下节点等），而且还是技术化的状态视图（实际执行的是技术的流程定义）。
+  
+  2.	流程绩效监控：
+  企业首先梳理多层级的标准流程，并基于BPM平台或业务系统进行流程实现，然后通过从BPM平台或者业务系统实时地捕获流程执行状态数据和业务相关数据，实现从全流程视角对“流程执行绩效指标”和“流程关联的业务指标”进行监控，促进绩效改进。
+  
+  3.	流程合规监控：
+  从BPM或者业务系统实时地捕获流程执行过程和业务相关数据，进行流程还原并与标准流程进行对照，对“流程执行过程的合规性”（包括两类监控内容：①基础违规监控，比如步骤缺失/多余、次序错乱、岗位错误等；②业务关联违规，比如多级审批违规、操作规则违规、指标超限违规等）进行监控，使企业能够尽早识别流程执行中存在的风险，并采取相对应的风险应对措施。
+  
+
+  \item Primeton BAM产品由以下五部分产品组件组成：BAM Engine（BAM引擎）、BAM Rule Engine（BAM规则引擎）、BAM Console（BAM建模与管理控制台）、BAM API & Component Library（BAM API和构件库）、 BAM Monitor（BAM监控器）。
+  \item 1）	BAM Engine（BAM引擎）是整个BAM产品的核心，负责业务数据/事件的采集、事件关联处理、流程还原处理、结果多维分析、实时告警与行动调度等。 
+  2）	BAM Rule Engine（BAM规则引擎）是一个内置的高性能业务规则运行环境，它能从业务监控上下文环境中获取必要的数据作为决策数据源，通过复杂的计算得出流程还原结果、流程合规结果、KPI得分等。 
+  3）	BAM Console（BAM建模与管理控制台）是一个面向业务监控建模人员与系统运维人员的建模与管理子系统，通过子系统可实现对标准业务流程的建模、流程监控模型的建模、企业绩效KPI的建模、业务规则的定义与设计、监控结果图表与报表的设计、系统配置项的管理等。 
+  4）	BAM API & Component Library（BAM API和构件库）包括数据/事件接收服务接口、监控分析结果查询API、监控结果展现标签库三部分，通过这些丰富的API与构件库，开发人员可根据业务场景需要快速开发出满足个性化监控要求的功能。 
+  5）	BAM Monitor（BAM监控器）是一个面向最终监控业务用户提供的图形化的监控结果展现子系统，通过该子系统可实现对业务监控结果的多样的仪表盘展现、复杂报表查询、实时推送式监控提醒等。
+  
+  
+\end{itemize}
+
+
+
+\vspace{0.5ex}
+\datedsubsection{\textbf{国家电网 BPM 平台}}{2018.6-2018-11}
+\role{技术栈：}{Golang shell脚本 python go-micro框架 gRPC Protobuf GORM库 NATS消息系统 etcd Redis  Docker MySQL MongoDB GitLab/CI Promethus grafna nsq AntDesignPro}
+\begin{itemize}
+  \item 通过从业务应用、BPM等外部数据源收集业务数据和业务事件，并经过复杂的关联处理与分析、图形化图表与报表展现，
+  \item 
+  \item Drone+Rancher搭建灵活的CI/CD平台，大大提升开发以及测试的效率。
+  \item 使用Elasticsearch实现统计（golang ）
+\end{itemize}
+
+
+
+\vspace{0.5ex}
+\datedsubsection{\textbf{电e宝、掌上电力App后端开发}}{2018.6-2018-11}
+\role{技术栈：}{Golang Gin框架 sqlx框架 GoMock swagger Redis  MySQL Docker AntDesignPro}
+\begin{itemize}
+  \item 实现后台管理系统，
+  \item 实现服务平滑重启功能，
+  \item 完成积分管理系统， 
+  \item 自动化生成文档
+  \item docker+drone 实现项目自动构建
+  \item Keepalived + Nginx高可用
+  \item 日志管理分析系统。
+  \item 后台服务容器化，保障后台系统稳定、高可用。
+  \item 
+\end{itemize}
+
+\vspace{-0.5ex}
+\datedsubsection{\textbf{电力数据监控系统}}{2016.6-2017.1}
+\role{技术栈：}{C/C++ Linux Socket shell}
+\begin{itemize}
+  \item 重构项目整体结构，完善项目相关文档，提升代码质量。
+  \item 用 C 语言重构核心计算单元代码，使数据处理单元速度提升40\%。
+  \item 完善系统的构建与编译工具链，方便项目的小功能拓展，便于项目维护。
+\end{itemize}
+
+\vspace{-0.5ex}
+\datedsubsection{\textbf{ZD1000综合自动化系统}}{2016.6-2017.1}
+\role{技术栈：}{C/C++ Linux Socket shell}
+\begin{itemize}
+  \item 给予 TCP/IP 协议栈，实现 IEC60870-104 国家标准协议，并且完成协议的部分功能测试。
+  \item 完成 DTU 核心单元的部分功能开发，系统实时响应提升15\%。
+  \item 根据中国电力科学院相关标准在系统中加入 AES 硬件加密模块，提升系统的安全性(原本用sm2算法)。
+  \item 完善项目构建工具链，在已完成的工作的基础上提供合理的程序接口与链接库。
+  \item 部分Linux驱动程序更新与维护。
+\end{itemize}
+
+\datedsubsection{\textbf{科控工业自动化设备（上海）有限公司~研发部~/~Web开发实习生}}{2015.10 -- 2016.2}
+\vspace{-0.5ex}
+\role{技术栈：}{JQuery HTML/CSS Ajax Java MySQL}
+\begin{itemize}
+  \item 公司主页网站的维护，页面整理与优化。
+  \item 与仓库管理进行对接，将相关数据导入仓库管理系统数据库，优化数据库。
+  \item 维护公司的 ERP 系统，完善差旅流程中一些存在问题。
+\end{itemize}
+
+\datedsubsection{\textbf{上海深视信息技术有限公司~研发部~/~机器视觉工程师助理}}{2015.7 -- 2015.9}
+\vspace{-0.5ex}
+\begin{itemize}
+  \item 负责开发试验过程中的硬件设备装配、调试。
+  \item 采集人面图像以及视频信息，完成机器学习训练任务。
+  \item 完成领导交给的临时任务。
+\end{itemize}
+
+\datedsubsection{\textbf{上海微梦信息技术有限公司~研发部~/~前端实习生}}{2014.7 -- 2014.9}
+\vspace{-0.5ex}
+\role{技术栈：}{JQuery HTML/CSS Ajax}
+\begin{itemize}
+  \item 协作完成微投房管理平台软件的部分功能。
+  \item 协助设计师美化页面、优化页面，提升响应速度。
+  \item 参与公司的头脑风暴，完成领导吩咐的临时任务。
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faGithubAlt\ 开源与社区}
+\datedsubsection{\textbf{Go 语言中文网}}{\text{\small 微信小程序：Go中文网,网站：} \url{https://studygolang.com}}
+\textbf{\small Go中文网开发组，负责：}
+\begin{itemize}
+  \item Go中文网网站开发、维护，板块维护等。
+  \item 网站运营讨论，技术交流。
+\end{itemize}
+\textbf{\small Go中文翻译组，负责：}
+\begin{itemize}
+  \item 翻译国外关于 golang 的优秀技术文章。
+  \item 翻译组相关问题解答、流程推进，以及推荐国外的一些优秀的技术文章。
+\end{itemize}
+
+\datedsubsection{\textbf{Rust 中文社区}}{\url{https://rust.cc/}\text{\quad |\quad }\url{https://rustlang-cn.org/}}
+\textbf{\small Rust.CC:}
+\begin{itemize}
+  \item 论坛线上问题收集以及运营等问题。
+  \item 负责论坛搜索功能开发,部分代码验证，功能测试等。
+  \item bug 反馈，技术交流。
+\end{itemize}
+\textbf{\small rustlang-cn：}
+\begin{itemize}
+  \item 社区、论坛建设交流。
+  \item rust 相关技术交流，一些rust相关文档学习翻译。
+\end{itemize}
+
+
+\datedsubsection{\textbf{其他}}{\url{}}
+\begin{itemize}
+  \item Github:\textbf{《深度学习 500 问》}，部分内容编辑，格式修正。
+  \item Github:\textbf{《Go语言高级编程》}，指出书中的纰漏与笔误。
+  \item 掘金翻译计划，活跃译者。
+\end{itemize}
+
+% \section{\}
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: golang > C/C++ == Python > Java == rust
+  \item 平台: Linux
+  \item 开发: DevOps
+\end{itemize}
+
+\section{\faInfo\ 其他}
+\text{书籍：\textbf{《Python实战机器学习》}（机械工业出版社；已完成审校，预计2019年初出版）}
+\begin{itemize}
+  \item 负责部分章节的翻译以及校对。
+  \item 内容排版与纰漏修正。
+\end{itemize}
+\text{技术博客: \url{https://www.7ethan.top}} \\
+\text{GitHub: \url{https://github.com/7Ethan}} \\
+\text{交流语言：国语，英语，粤语}
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
+}
